@@ -1,2 +1,2 @@
-# Classical_Electrodynamic_Lecture_Notes
+# Classical Electrodynamics Lecture Notes
  
