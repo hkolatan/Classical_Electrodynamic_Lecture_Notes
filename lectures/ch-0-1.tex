@@ -1,0 +1,29 @@
+\setcounter{chapter}{-2}
+\chapter*{Vektör Formülleri}
+
+\begin{align*}
+\begin{aligned}
+   \Vec{a} \cdot (\Vec{b} \times \Vec{c}) & = \Vec{b} \cdot (\Vec{c} \times \Vec{a}) = \Vec{c} \cdot (\Vec{a} \times \Vec{b}) \\
+   \Vec{a} \times (\Vec{b} \times \Vec{c}) & = (\Vec{a} \cdot \Vec{c}) \Vec{b} - (\Vec{a} \cdot \Vec{b}) \Vec{c} \\
+   (\Vec{a} \times \Vec{b}) \cdot (\Vec{c} \times \Vec{d}) &= (\Vec{a} \cdot \Vec{c}) (\Vec{b} \cdot \Vec{d}) - (\Vec{a} \cdot \Vec{d}) (\Vec{b} \cdot \Vec{c}) \\
+   \grad \times \grad \psi & = 0 \\
+   \grad \cdot ( \grad \times \Vec{a} ) & = 0 \\
+   \grad \times (\grad \times \Vec{a}) & = \grad (\grad \cdot \Vec{a}) - \nabla^{2} \Vec{a} \\
+   \grad \cdot (\psi \Vec{a}) &= \Vec{a} \cdot \grad \psi + \psi \grad \cdot \Vec{a}\\
+   \grad \times (\psi \Vec{a}) &= \grad \psi \times \Vec{a} + \psi \grad \times \Vec{a}\\
+   \grad (\Vec{a} \cdot \Vec{b}) &= (\Vec{a} \cdot \grad) \Vec{b} + (\Vec{b} \cdot \grad) \Vec{a} + \Vec{a} \times (\grad \times \Vec{b}) + \Vec{b} \times (\grad \times \Vec{a})\\
+   \grad \cdot (\Vec{a} \times \Vec{b} ) &= \Vec{b} \cdot (\grad \times \Vec{a}) - \Vec{a} \cdot (\grad \times \Vec{b})\\
+   \grad \times (\Vec{a} \times \Vec{b}) &= \Vec{a} (\grad \cdot \Vec{b}) - \Vec{b} (\grad \cdot \Vec{a}) + (\Vec{b} \cdot \grad) \Vec{a} - (\Vec{a} \cdot \grad) \Vec{b}
+   \end{aligned}
+\end{align*}
+
+Of $\Vec{x}$ is the coordinate of a point with respect to some origin, with magnitude $r=|\Vec{x}|,\Vec{n} = \Vec{x}/r$ is a unit radial vector, and $f(r)$ is a well-behaved function of $r$, then
+\begin{align*}
+\begin{aligned}
+\grad \cdot \Vec{x} &= 3 \qquad \qquad \qquad \qquad \grad \times \Vec{x} &= 0 \\
+\grad \cdot [\Vec{n} f(r)] &= \dfrac{2}{r}f + \dfrac{\partial f}{\partial r} \qquad \quad \grad \times [\Vec{n} f(r)] & = 0
+   \end{aligned}
+\end{align*}
+\[ (\Vec{a} \cdot \grad) \Vec{n} f(r) = \frac{f(r)}{r} [\Vec{a} - \Vec{n} (\Vec{a} \cdot \Vec{n})] + \Vec{n} (\Vec{a} \cdot \Vec{n}) \dfrac{\partial f}{\partial r} \]
+\[ \grad (\Vec{x} \cdot \Vec{a}) = \Vec{a} + \Vec{x} (\grad \cdot \Vec{a}) + i (\Vec{L} \times \Vec{a}) \]
+where $\Vec{L} = \dfrac{1}{i} (\Vec{x} \times \grad)$ is the angular momentum operator.

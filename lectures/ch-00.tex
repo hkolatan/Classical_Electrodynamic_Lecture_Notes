@@ -1,0 +1,79 @@
+\setcounter{chapter}{-1}
+\cleardoublepage
+\pagenumbering{arabic}
+\chapter{Giriş ve Genel Bakış}
+
+Kehribar ve mıknatıs taşı eski Yunanlılardan beri bilindiği halde, elektrodinamik, nicel olarak bir yüzyıldan daha kısa bir süre içerisinde geliştirilmiştir. Cavendish'in göze çarpan elektrostatik deneyleri 1771 ile 1773 yılları arasında yapılmıştır. Coulomb gösterişli araştırmalarını 1785’te yayınlamaya başlamıştır. Bu, elektrik ve manyetizmada evrensel nitelikli nicel araştırmaların başlangıcını gösterir. Elli yıl sonra, Faraday, zamanla değişen akımların ve manyetik alanların etkilerini inceliyordu. Maxwell, elektromanyetik alanın dinamik kuramı üzerine olan o ünlü makalesini 1864’te yayınlamıştı. Elektrik ile manyetizmayı ve ışığı anlamamızın gelişim öyküsü, kuşkusuz ki bir yüzyıldan birkaç isim vermenin ötesinde, çok daha uzun ve daha zengindir. Okuyucu, bu büyüleyici tarihin ayrıntıları için, Whittaker'in güvenilir ciltlerine bakmalıdır. Optik olaylarına önem veren daha kısa bir öykü ise, Born ve Wolf'un başlangıcında yer alır. Bu kitap kendi kendine yeterlidir; gerçi vektör hesabına ve türevli denklemlere dayanan bir matematiksel temel ister, fakat elektrodinamik konusu, elektrostatikteki temellerinden başlanarak geliştirilmektedir. Bununla beraber okuyucuların çoğu bu konuyla ilk kez karşılaşmıyorlar. Dolayısıyla bu girişin amacı, Coulomb yasası ve diğer temellerin tartışılmasına sahne hazırlamak değil, klasik elektromanyetizmayı özet biçiminde gözden geçirmektir. Bu arada, kuvvet için ters kare yasasının bugünkü doğruluk derecesi (fotonun kütlesi), üst üste gelme ilkesinin geçerlilik limitleri, yükün ve enerji farklarının kesikli oluşlarının etkileri gibi sorular tartışılacaktır. Farklı ortamlar arasındaki yüzeylerde ve iletkenlerde makroskobik alanlar için sınır koşulları gibi "peynir ekmek" cinsinden konulara da değinilecektir. Amaç, klasik elektromanyetizmayı yerli yerine oturtmak, geçerlilik bölgesini göstermek ve kapsadığı idealleştirmelerin bazılarını aydınlatmaktır. Tartışma süresince, kitapta daha sonra çıkarılan bazı sonuçlar ve klasik olmayan bazı düşünceler kullanılacaktır. Kuşkusuz elektromanyetizmaya ilk kez başlayan bir okuyucu kanıtlamaların tümünü izleyemeyecek, ya da onların önemini anlayamayacaktır. Bununla beraber, diğerleri için bu giriş, kitabın 5. Bölümünden sonraki kısımlarına bir sıçrama tahtası rolü oynayacak ve ayrıca bir deneysel bilim olarak konunun nasıl ayakta durduğunu anımsatacaktır kanısındayız.
+
+\section{Boşlukta Maxwell Denklemleri, Alanlar ve Kaynaklar}
+
+Elektromanyetik olayları yöneten denklemler Maxwell denklemleridir,
+\begin{align}
+\begin{aligned}
+   \Vec{\nabla} \cdot \Vec{D}  & = \rho \\
+   \Vec{\nabla} \times \Vec{H} - \dfrac{\partial \Vec{D}}{\partial t}  & = \Vec{J} \\
+   \Vec{\nabla} \times \Vec{E} + \dfrac{\partial \Vec{B}}{\partial t} &  = 0 \\
+   \Vec{\nabla} \cdot \Vec{B} &  = 0
+   \end{aligned}
+\end{align}
+
+vakumdaki dış kaynaklar için $\Vec{D} = \epsilon_{0} E $ ve $ \Vec{B} = \mu_{0}\Vec{H}$ olacaktır. Bu iki denklem daha sonra
+\begin{align}
+\begin{aligned}
+   \Vec{\nabla} \cdot \Vec{E}  & = \dfrac{\rho}{\epsilon_{0}} \\
+   \Vec{\nabla} \times \Vec{B} - \dfrac{\partial \Vec{E}}{c^{2} \partial t}  & = \mu_{0} \Vec{J}
+       \end{aligned}
+\end{align}
+şeklinde olacaktır.
+
+\newpage
+
+Yük yoğunluğu ve akım yoğunluğu için süreklilik denklemi dediğimiz
+\begin{align}
+    \dfrac{\partial \rho}{\partial t} + \Vec{\nabla} \cdot \Vec{J} = 0
+\end{align}
+
+bağıntısı Maxwell denklemlerinde kapalı olarak bulunmaktadır. (1.1)'deki ilk denklemin zamana göre türevi ile ikinci denklemin
+ıraksamasını birleştirince bu bağıntı ortaya çıkar.
+
+\begin{definition}[Maxwell denklemlerinden Gauss Yasası ve Ampere-Maxwell Yasasını kullanarak süreklilik denklemini elde ediniz]
+
+\[  \textrm{Ampere - Maxwell Yasası: } \vec{\nabla} \times \vec{B} = \mu_{0} \bigg( \vec{J} + \varepsilon_{0} \dfrac{\partial \vec{E}}{\partial t}  \bigg) \]
+ \[ \textrm{Gauss Yasası: } \vec{\nabla} \cdot \vec{E} = \dfrac{\rho}{\varepsilon_{0}}   \]
+Maddesel ortamda Maxwell yasaları,
+
+\[   \textrm{Ampere - Maxwell Yasası: } \vec{\nabla} \times \vec{H} = \vec{J} + \frac{\partial \vec{D}}{\partial t}  \]
+\[  \textrm{Gauss Yasası: } \vec{\nabla} \cdot \vec{D} = \sigma  \]
+\[ \vec{\nabla} \cdot (\vec{\nabla} \times \vec{H} ) = \vec{\nabla} \cdot (\vec{J} + \dfrac{\partial \vec{D}}{\partial t}\ )  \]	
+\[    \vec{\nabla} \cdot ( \vec{\nabla} \times \vec{H} ) = 0 \textrm{ olacağı için,}  \]
+\[     \vec{\nabla} \cdot ( \vec{J} + \dfrac{\partial \vec{D}}{\partial t} ) = 0  \]
+\[     \vec{\nabla} \cdot \vec{J} + \vec{\nabla} \cdot ( \dfrac{\partial \vec{D}}{\partial t} ) = 0 \]
+\[  \dfrac{\partial}{\partial t} ( \vec{\nabla} \cdot \vec{D} ) = - \vec{\nabla} \cdot \vec{J}  \]
+\[   \vec{\nabla} \cdot ( \sigma ) = - \vec{\nabla} \cdot \vec{J}  \]
+\[  \vec{\nabla} \cdot \vec{J}  = -  \dfrac{\partial \sigma }{\partial t}  \]
+\[  \vec{\nabla} \cdot \vec{J} + \dfrac{\partial \sigma }{\partial t}  = 0  \]
+	  
+\end{definition}
+
+Yüklü parçacık hareketinin ele alınışında temel olan bir denklem de, elektromanyetik alanların varlığı halinde, noktasal bir q yüküne etkiyen kuvveti veren
+
+\begin{align}
+    \Vec{F} = q \big( \Vec{E} + \dfrac{1}{c} \Vec{v} \times \Vec{B} \big) 
+\end{align}
+
+şeklindeki Lorentz kuvvetidir.
+
+Bu denklemler SI birimleri cinsinden yazılmıştır; bu kitapta kullanılan elektromanyetik birim sistemi budur (Birimler ve boyutlar, kitabın sonundaki Ek'te tartışılmaktadır). Maxwell denklemleri, sözü edilen Ek'teki Çizelge 2'de çeşitli birim sistemleri cinsinden de sergilenmektedir. Bu denklemler, $\Vec{E}$ ve $\Vec{B}$ alanları ile $\rho$ ve $\Vec{J}$ kaynaklarından başka, bir de c parametresi kapsamaktadır. Bu nicelik hız boyutunda olup, ışığın boşluktaki hızıdır. Işık hızının tüm elektromanyetik ve relativistik olaylar için temel bir önemi vardır. Ek'te tartışıldığı gibi, son yıllarda iki farklı atomik geçiş cinsinden ayrı ayrı tanımlanan uzunluk ve zaman birimlerimize dayalı olarak, bu parametre $ c=299 \ 792 \ 458 \ m/s$ deneysel değerine sahiptir. Bu sonuç, son derece kararlı bir helyum-neon lazeri kullanılarak hem frekansın hem de dalga boyunun ölçüldüğü bir deneyden elde edilir. Bu noktada şuna işaret edelim ki, burada metrenin bugünkü tanımı yerine, $c$'yi ve saniyeyi kullanan bir tanım konmuş gibi bir kesinlik vardır. Bu tanımlar, ışık hızının evrensel bir sabit olduğunu varsayar ve kanıtlarla (Kesim 11.2 (c)'ye bakınız) uyumlu olduğunu varsayar; çok alçak frekanslardan en azından $ \nu \simeq 10^{24}$ Hz'lik çok yüksek frekanslara (4' GeV'lik fotonlara) kadar, büyük bir doğrulukla, ışığın boşluktaki hızının frekanstan bağımsız olduğunu gösterir. Pek çok pratik araç için, $ c = 3 \times 10^{8} \ m/s$ ya da daha kesin olan $c = 2.998 \times 10^{8} \ m/s$ değeri alınabilir.
+
+\
+
+Denklem (1.1)'deki $\Vec{E}$ ve $\Vec{B}$ elektrik ve manyetik alanları, ilk olarak denklem (1.3)'teki kuvvet denklemi aracılığıyla ortaya atılmıştır. Coulomb'un deneylerinde, yerleşik yük dağılımları arasında etkiyen kuvvetler gözlenmişti. Burada birim yük başına düşen kuvvet olarak $\Vec{E}$ elektrik alanını ortaya atmak yararlıdır (Bölüm 1.2'ye bak). Benzer şekilde, Ampere'in deneylerinde ise, akım taşıyan halkalar arasındaki karşılıklı kuvvetler incelenmişti (Bölüm 5.2'ye bak). Birim hacminde $\Vec{v}$ hızlı N tane yük taşıyıcısı bulunan A kesit alanlı bir iletkenden geçen akımı $NAq \Vec{v}$ olarak saptamakla, denklem (1.3)'teki $\Vec{B}$'nin, büyüklükçe, birim akım başına düşen kuvvet olarak tanımlanabileceğini görürüz. $\Vec{E}$ ile $\Vec{B}$ başlangıçta sadece yük ve akım dağılımları tarafından oluşturulan kuvvetlerin yerine konan yararlı yardımcılar gibi gözüktüğü halde, onların başka önemli özellikleri de vardır. Birinci olarak, alanların ortaya atılmasıyle, kavramsal açıdan kaynaklar, elektromanyetik alanları gören test cisimlerinden ayrılmışlardır.
+İki kaynak dağılımının $\Vec{E}$ ve $\Vec{B}$ alanları uzayın verilen bir noktasında aynı iseler, kaynak dağılımları ne kadar farklı olursa olsun, bu noktadaki bir test yüküne ya da test akımına etkiyen kuvvet aynı olacaktır. Bu, denklem (1.3)'teki $\Vec{E}$ ve $\Vec{B}$ alanlarına, kaynaklarından bağımsız olarak, kendi hakları olan anlamı verir. İkinci olarak, elektromanyetik alanlar, kaynakların bulunmadığı uzay bölgelerinde de var olabilirler. Enerji, momentum ve açısal momentum taşırlar ve böylece yüklerden ve akımlardan tümüyle bağımsız olarak bir varlığa sahiptirler. Gerçekten de, yüklü parçacıkların etkileşmesini uzaktan-etki şeklinde anlatmayı yeğleyen ve dolayısıyla alanlara açıkça başvurmayı ortadan kaldırmak için tekrarlanan girişimler olsa da, elektromanyetik alan kavramı, hem klasik hem de kuantum mekaniksel olarak, fiziğin en verimli düşüncelerinden biridir.
+
+\
+
+Alışılmış alanlar olarak $\Vec{E}$ ve $\Vec{B}$ klasik bir kavramdır. Gerçek ve sanal fotonlar cinsinden yapılan kuantum mekaniksel anlatımın klasik limiti (büyük kuantum sayıları limiti) gibi düşünülebilir. Makroskobik olaylar bölgesinde ve hatta bazı atomik olaylarda, elektromanyetik alanın kesikli foton görünümü çoğu kez önemsenmeyebilir, ya da en azından törpülenebilir. Örneğin, 100 Watt'lık ışık ampulünden 1 metre ötede, elektrik alanının kare ortalaması kökü (kısaca k.o.k.) 0,5 volt/cm dolayındadır ve saniyede cm$^{2}$'ye $10^{15}$ kadar görünür foton gelir. Benzer şekilde, $10^{8}$ Hz'de 100 Watt gücünde izotropik bir FM anteni, 100 km'lik bir uzaklıkta ancak 5 mikrovolt/cm'lik bir k.o.k. elektrik alanı oluşturur; fakat bu gene de $10^{12}$ foton/cm$^{2}$ x s'lik bir akıya, ya da bu uzaklıktaki 1 dalga boyu küpünün ($27 \ m^{3}$) hacminde $10^{9}$ dolayında foton bulunmasına karşı gelir. Alışıldığı gibi, aygıt, fotonlara tek tek duyarlı olmayacak; yayınlanan ya da soğurulan birçok fotonun toplu etkisi, makroskobik olarak gözlenebilen sürekli bir yanıt olarak görünecektir.
+
+\
+
+Elektromanyetik alanların klasik anlatımının ne zaman uygun olacağına önsel olarak nasıl karar verilecektir? Bazen biraz karmaşıklık gerekir; fakat genellikle şu yeterli bir ölçüttür: işe karışan foton sayısının büyük alınması yanında, ayrıca bir tek fotonun taşıdığı momentum da maddesel sistemin momentumuna göre küçük ise, o zaman maddesel sistemin yanıtı, elektromanyetik alanların klasik anlatımıyla yeterince saptanabilir. Örneğin, FM antenimiz tarafından yayınlanan $10^{8}$ Hz'lik her bir foton, antene sadece $2.2 \times 10^{-34}$ newton-saniye'lik bir itme verir. Klasik işlem kuşkusuz yeterlidir. Işığın serbest elektron tarafından saçılması, alçak frekanslarda klasik Thomson formülüyle (Bölüm 14.7) verilir; fakat gelen fotonun $\hbar\omega / c$ momentumu $mc$'ye göre önemli hale gelince Compton etkisi yasaları yürürlüğe girer. Fotoelektrik olay maddesel sistem için klasik olmayan bir olgudur; çünkü metal içindeki yarı-serbest elektronlar kendi enerjilerini soğurulan fotonların enerjilerine eşit miktarda değiştirirler; fakat fotoelektrik akım, elektronlar için kuantum mekaniksel biçimde, elektromanyetik alanların klasik anlatımı kullanılarak hesaplanabilir.
